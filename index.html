@@ -7,8 +7,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="todo-container">
+        <header>
+            <h1>ToDo Avançado</h1>
+        </header>
+        <form id="todo-form">
+            <p>Adicione a sua tarefa: </p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+                <button type="submit">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form"></form>
+    </div>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/script.js"></script>
 </body> 
 </html>
