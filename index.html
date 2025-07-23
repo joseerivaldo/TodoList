@@ -16,14 +16,53 @@
             <div class="form-control">
                 <input type="text" id="todo-input" placeholder="O que você vai fazer?">
                 <button type="submit">
-                    <ion-icon name="add-outline"></ion-icon>
+                    <ion-icon name="add"></ion-icon>
                 </button>
             </div>
         </form>
         <form id="edit-form">
             <p>Edite sua tarefa</p>
-            <input type="text" name="" id="">
+            <div class="form-control">
+                <input type="text" id="edit-input">
+                <button type="submit">
+                    <ion-icon name="checkmark-done-outline"></ion-icon>
+                </button>
+            </div>
+            <button id="calcel-edit-btn">Cancelar</button>
         </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar: </h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="buscar">
+                    <button id="erase-button">
+                        <ion-icon name="backspace"></ion-icon>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar: </h4>
+                <select id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
+        </div>
+        <div id="todo-list">
+            <div class="todo">
+                <h3>Estou fazendo alguma coisa...</h3>
+                <button class="finish-todo">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </button>
+                <button class="edit-todo">
+                    <ion-icon name="pencil-outline"></ion-icon>
+                </button>
+                <button class="remove-todo">
+                    <ion-icon name="close"></ion-icon>
+                </button>
+            </div>
+        </div>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
