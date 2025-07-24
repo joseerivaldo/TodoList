@@ -12,7 +12,7 @@ html, body{
 }
 
 body{
-    /*background-image: url(../img/aurora.jpg);*/
+    background-image: url(../img/aurora.jpg);
     background-position: center;
     background-size: cover;
 }
