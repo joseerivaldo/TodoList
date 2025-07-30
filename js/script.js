@@ -13,6 +13,11 @@ const saveTodo = (text) =>{
 
     const todoTitle = document.createElement('h3')
     todoTitle.innerText = text
+    todo.appendChild(todoTitle)
+
+    const doneBtn = document.createElement('button')
+    doneBtn.classList.add('finish-todo')
+    doneBtn.innerHTML
 }
 
 //Eventos
