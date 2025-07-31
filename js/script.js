@@ -17,7 +17,22 @@ const saveTodo = (text) =>{
 
     const doneBtn = document.createElement('button')
     doneBtn.classList.add('finish-todo')
-    doneBtn.innerHTML
+    doneBtn.innerHTML = '<ion-icon name="checkmark-outline"></ion-icon>'
+    todo.appendChild(doneBtn)
+
+    const editBtn = document.createElement('button')
+    editBtn.classList.add('edit-todo')
+    editBtn.innerHTML = '<ion-icon name="pencil"></ion-icon>'
+    todo.appendChild(editBtn)
+
+    const deleteBtn = document.createElement('button')
+    deleteBtn.classList.add('remove-todo')
+    deleteBtn.innerHTML = '<ion-icon name="close"></ion-icon>'
+    todo.appendChild(deleteBtn)
+
+    todoList.appendChild(todo)
+
+    todoInput.value = ''
 }
 
 //Eventos
