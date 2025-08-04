@@ -52,7 +52,7 @@ document.addEventListener('click', (e)=>{
     const parentEl = targetEl.closest('div')
 
     if(targetEl.classList.contains('finish-todo')){
-        console.log('Clicou em finalizar')
+        parentEl.classList.add('done')
     }
     else if(targetEl.classList.contains('edit-todo')){
         console.log('Clicou em editar')
