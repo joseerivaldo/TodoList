@@ -52,12 +52,14 @@ document.addEventListener('click', (e)=>{
     const parentEl = targetEl.closest('div')
 
     if(targetEl.classList.contains('finish-todo')){
-        parentEl.classList.add('done')
+        parentEl.classList.toggle('done')
     }
-    else if(targetEl.classList.contains('edit-todo')){
-        console.log('Clicou em editar')
-    }
+
     else if(targetEl.classList.contains('remove-todo')){
-        console.log('Clicou em remover')
+        parentEl.remove()
+    }
+
+    else if(targetEl.classList.contains('edit-todo')){
+        toggleForms()
     }
 })
